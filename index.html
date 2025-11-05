@@ -27,6 +27,7 @@
       text-decoration: none;
       font-weight: 600;
       transition: 0.3s;
+      cursor: pointer;
     }
     .btn-primary { background: #25D366; color: #fff; }
     .btn-primary:hover { background: #1da851; }
@@ -60,7 +61,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      display: none; /* hidden initially */
     }
+    .iframe-container.active { display: flex; }
     .iframe-container iframe {
       width: 95%;
       height: 95%;
@@ -141,7 +144,7 @@
           <li>📱 100% Mobile Responsive</li>
         </ul>
         <div class="btn-group">
-          <a href="https://real-estate-samplee.netlify.app/" target="_blank" class="btn-secondary">View Design</a>
+          <a id="viewDesignBtn" class="btn-secondary">View Design</a>
           <a href="https://wa.me/918102253186?text=Hi%20I%20want%20the%2048-hour%20Real%20Estate%20Website%20(₹4999)." class="btn-primary">Get This Website</a>
         </div>
       </div>
@@ -164,7 +167,7 @@
 
   <section>
     <h2 class="section-title">Our Real Estate Design</h2>
-    <div class="iframe-container">
+    <div class="iframe-container" id="designPreview">
       <iframe src="https://real-estate-samplee.netlify.app/" title="Real Estate Demo"></iframe>
     </div>
 
@@ -230,11 +233,18 @@
   </div>
 
   <script>
+    // FAQ toggle
     document.querySelectorAll(".faq-question").forEach(q => {
-      q.addEventListener("click", () => {
-        const item = q.parentElement;
-        item.classList.toggle("active");
-      });
+      q.addEventListener("click", () => q.parentElement.classList.toggle("active"));
+    });
+
+    // View Design toggle
+    const viewBtn = document.getElementById("viewDesignBtn");
+    const iframeContainer = document.getElementById("designPreview");
+    viewBtn.addEventListener("click", () => {
+      iframeContainer.classList.toggle("active");
+      viewBtn.textContent = iframeContainer.classList.contains("active") ? "Hide Design" : "View Design";
+      iframeContainer.scrollIntoView({ behavior: "smooth" });
     });
   </script>
 
