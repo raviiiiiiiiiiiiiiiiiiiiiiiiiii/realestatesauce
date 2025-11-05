@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Real Estate Website in 48 Hours | ₹4,999</title>
-  <meta name="description" content="Get your real estate website ready in 48 hours. Fully responsive, hosted, SSL secured, and WhatsApp supported. Starting at ₹4,999.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="Get your real estate website ready in 48 hours. Fully responsive, hosted, SSL secured, and WhatsApp supported. Starting at ₹4,999."
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background: #f7f9fb; color: #222; line-height: 1.6; overflow-x: hidden; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+    body {
+      background: #f7f9fb;
+      color: #222;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
     header {
       text-align: center;
@@ -16,48 +32,63 @@
       background: linear-gradient(135deg, #2b5876, #4e4376);
       color: #fff;
     }
-    header h1 { font-size: 2rem; }
-    header p { margin-top: 0.5rem; color: #e0e0e0; }
-
-    .btn-primary {
-      display: inline-block;
-      margin-top: 1rem;
-      background: #25D366;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
+    header h1 {
+      font-size: 2rem;
     }
-    .btn-primary:hover { background: #1da851; }
+    header p {
+      margin-top: 0.5rem;
+      color: #e0e0e0;
+    }
+
+    .btn-primary,
     .btn-secondary {
       display: inline-block;
       margin-top: 1rem;
-      background: #4e4376;
-      color: #fff;
       padding: 0.75rem 1.5rem;
       border-radius: 10px;
       text-decoration: none;
       font-weight: 600;
       transition: 0.3s;
     }
-    .btn-secondary:hover { background: #372d5b; }
+    .btn-primary {
+      background: #25d366;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #1da851;
+    }
+    .btn-secondary {
+      background: #4e4376;
+      color: #fff;
+    }
+    .btn-secondary:hover {
+      background: #372d5b;
+    }
 
-    section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #111;
+      margin-bottom: 1.5rem;
+    }
 
     .card {
       background: #fff;
       border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       margin-bottom: 1.8rem;
     }
 
     .iframe-container {
       background: #eef3f9;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
+      border-radius: 15px;
       overflow: hidden;
       position: relative;
       width: 100%;
@@ -71,14 +102,29 @@
       height: 95%;
       border: none;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
     }
 
-    .card-content { padding: 1.5rem; }
-    .card-content h2 { font-size: 1.5rem; margin-bottom: 0.5rem; color: #111; }
-    .price { font-weight: 700; color: #000; font-size: 1.25rem; margin: 0.5rem 0 1rem 0; }
+    .card-content {
+      padding: 1.5rem;
+    }
+    .card-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #111;
+    }
+    .price {
+      font-weight: 700;
+      color: #000;
+      font-size: 1.25rem;
+      margin: 0.5rem 0 1rem 0;
+    }
 
-    ul.features { list-style: none; margin: 0.5rem 0; padding: 0; }
+    ul.features {
+      list-style: none;
+      margin: 0.5rem 0;
+      padding: 0;
+    }
     ul.features li {
       padding: 0.5rem 0;
       border-bottom: 1px solid #eee;
@@ -86,7 +132,9 @@
       align-items: center;
       gap: 0.5rem;
     }
-    ul.features li::before { content: "✔️"; }
+    ul.features li::before {
+      content: "✔️";
+    }
 
     .btn-group {
       display: flex;
@@ -94,14 +142,18 @@
       gap: 1rem;
     }
 
-    .why-us, .faq {
+    .why-us,
+    .faq {
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
       padding: 1.5rem;
       margin-bottom: 1.8rem;
     }
-    .why-us h3, .faq h3 { margin-bottom: 1rem; }
+    .why-us h3,
+    .faq h3 {
+      margin-bottom: 1rem;
+    }
 
     .faq-item {
       border-bottom: 1px solid #eee;
@@ -119,9 +171,17 @@
       padding-top: 0.5rem;
       color: #444;
     }
-    .faq-item.active .faq-answer { display: block; }
-    .faq-item.active .faq-question::after { content: "▲"; }
-    .faq-question::after { content: "▼"; font-size: 0.8rem; color: #555; }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    .faq-item.active .faq-question::after {
+      content: "▲";
+    }
+    .faq-question::after {
+      content: "▼";
+      font-size: 0.8rem;
+      color: #555;
+    }
 
     footer {
       text-align: center;
@@ -132,10 +192,11 @@
 
     .sticky-footer {
       position: fixed;
-      bottom: 0; left: 0;
+      bottom: 0;
+      left: 0;
       width: 100%;
       background: #fff;
-      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -143,7 +204,7 @@
       z-index: 999;
     }
     .sticky-footer a {
-      background: #25D366;
+      background: #25d366;
       color: #fff;
       padding: 0.7rem 1rem;
       border-radius: 8px;
@@ -152,15 +213,19 @@
       font-size: 0.9rem;
     }
     @media (min-width: 768px) {
-      .sticky-footer { display: none; }
+      .sticky-footer {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Launch Your Real Estate Website in 48 Hours 🚀</h1>
-    <p>Professional, responsive, and ready to impress your clients — starting at ₹4,999.</p>
+    <p>
+      Professional, responsive, and ready to impress your clients — starting at
+      ₹4,999.
+    </p>
     <a href="#plans" class="btn-primary">See Plans</a>
   </header>
 
@@ -178,9 +243,11 @@
   </section>
 
   <section id="plans">
+    <h2 class="section-title">Our Plans</h2>
+
     <div class="card">
       <div class="card-content">
-        <h2>48-Hour Website – ₹4,999</h2>
+        <h3>48-Hour Website – ₹4,999</h3>
         <p class="price">Delivery Time: 2 Days</p>
         <ul class="features">
           <li>⚡ 48-hour delivery</li>
@@ -190,15 +257,24 @@
           <li>📱 100% Mobile Responsive</li>
         </ul>
         <div class="btn-group">
-          <a href="https://real-estate-samplee.netlify.app/" target="_blank" class="btn-secondary">View Design</a>
-          <a href="https://wa.me/918102253186?text=Hi%20I%20want%20the%2048-hour%20Real%20Estate%20Website%20(₹4999)." class="btn-primary">Get This Website</a>
+          <a
+            href="https://real-estate-samplee.netlify.app/"
+            target="_blank"
+            class="btn-secondary"
+            >View Design</a
+          >
+          <a
+            href="https://wa.me/918102253186?text=Hi%20I%20want%20the%2048-hour%20Real%20Estate%20Website%20(₹4999)."
+            class="btn-primary"
+            >Get This Website</a
+          >
         </div>
       </div>
     </div>
 
     <div class="card">
       <div class="card-content">
-        <h2>Custom Website Design – from ₹9,999</h2>
+        <h3>Custom Website Design – from ₹9,999</h3>
         <p class="price">Delivery: 5 Days – 2 Weeks</p>
         <ul class="features">
           <li>🎨 Fully customized design</li>
@@ -206,14 +282,38 @@
           <li>📧 Lead generation integration</li>
           <li>💼 Designed for Agencies & Realtors</li>
         </ul>
-        <a href="https://wa.me/918102253186?text=Hi%20I%20want%20a%20custom%20real%20estate%20website.%20My%20requirements%20are%3A" class="btn-primary">Discuss Custom Website</a>
+        <a
+          href="https://wa.me/918102253186?text=Hi%20I%20want%20a%20custom%20real%20estate%20website.%20My%20requirements%20are%3A"
+          class="btn-primary"
+          >Discuss Custom Website</a
+        >
       </div>
     </div>
   </section>
 
   <section>
+    <h2 class="section-title">Our Real Estate Design</h2>
     <div class="iframe-container">
-      <iframe src="https://real-estate-samplee.netlify.app/" title="Real Estate Demo"></iframe>
+      <iframe
+        src="https://real-estate-samplee.netlify.app/"
+        title="Real Estate Demo"
+      ></iframe>
+    </div>
+
+    <div class="card" style="margin-top: 1rem">
+      <div class="card-content">
+        <h3>Design Features</h3>
+        <ul class="features">
+          <li>📱 Mobile-friendly layout optimized for every device</li>
+          <li>🏘️ Property Listings Section to showcase all properties clearly</li>
+          <li>🧾 Services Section to highlight your real estate services</li>
+          <li>🙌 Why Choose Us section to build instant trust</li>
+          <li>💬 WhatsApp Contact Buttons on each agent’s profile</li>
+          <li>👥 Agents Section introducing your realtors with pictures</li>
+          <li>🌟 Testimonials Section to add credibility and client feedback</li>
+          <li>ℹ️ About Section describing your agency’s story & vision</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -222,19 +322,27 @@
       <h3>FAQs</h3>
       <div class="faq-item">
         <div class="faq-question">Do I need to talk to a developer?</div>
-        <div class="faq-answer">Nope, you just message us your details — we handle everything end-to-end.</div>
+        <div class="faq-answer">
+          Nope, you just message us your details — we handle everything end-to-end.
+        </div>
       </div>
       <div class="faq-item">
         <div class="faq-question">What if I want changes?</div>
-        <div class="faq-answer">You get 2 free revisions to make sure everything’s perfect.</div>
+        <div class="faq-answer">
+          You get 2 free revisions to make sure everything’s perfect.
+        </div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Can you help with domain & hosting?</div>
-        <div class="faq-answer">Yes, we can set it up for you or guide you step-by-step.</div>
+        <div class="faq-answer">
+          Yes, we can set it up for you or guide you step-by-step.
+        </div>
       </div>
       <div class="faq-item">
         <div class="faq-question">How do I pay?</div>
-        <div class="faq-answer">You can pay after preview if you want — we trust our work.</div>
+        <div class="faq-answer">
+          You can pay after preview if you want — we trust our work.
+        </div>
       </div>
     </div>
   </section>
@@ -244,18 +352,23 @@
   </footer>
 
   <div class="sticky-footer">
-    <a href="https://wa.me/918102253186?text=Hi%20I%20want%20the%2048-hour%20Real%20Estate%20Website%20(₹4999).">Buy 48-Hour Site</a>
-    <a href="https://wa.me/918102253186?text=Hi%20I%20want%20a%20custom%20real%20estate%20website.%20My%20requirements%20are%3A">Custom Site</a>
+    <a
+      href="https://wa.me/918102253186?text=Hi%20I%20want%20the%2048-hour%20Real%20Estate%20Website%20(₹4999)."
+      >Buy 48-Hour Site</a
+    >
+    <a
+      href="https://wa.me/918102253186?text=Hi%20I%20want%20a%20custom%20real%20estate%20website.%20My%20requirements%20are%3A"
+      >Custom Site</a
+    >
   </div>
 
   <script>
-    document.querySelectorAll('.faq-question').forEach(q => {
-      q.addEventListener('click', () => {
+    document.querySelectorAll(".faq-question").forEach((q) => {
+      q.addEventListener("click", () => {
         const item = q.parentElement;
-        item.classList.toggle('active');
+        item.classList.toggle("active");
       });
     });
   </script>
-
 </body>
 </html>
